@@ -6,6 +6,17 @@ input_r2="$2"
 output_r1="${input_r1%%.*}_filtered.fastq.gz"
 output_r2="${input_r2%%.*}_filtered.fastq.gz"
 report_file="${input_r1%%.*}_rapport.txt"
+counter=1
+
+# Vérifier si le rapport existe déjà et demander à l'utilisateur s'il souhaite l'écraser
+while [[ -f "$report_file" ]]; do
+  read -p "Le fichier $report_file existe déjà. Souhaitez-vous l'écraser ? (O)ui/(N)on : " user_choice
+  case "$user_choice" in
+    [Oo]* ) break;;
+    [Nn]* ) report_file="${base_name}_rapport($counter).txt"; ((counter++));;
+    * ) echo "Veuillez répondre (O)ui ou (N)on.";;
+  esac
+done
 
 # Extraire les reads purs GGGGCC pour le fichier R1
 grep -A 3 -B 1 '^GGGGCC$' <(zcat "$input_r1") > "${input_r1%%.*}_GGGGCC.fastq"
