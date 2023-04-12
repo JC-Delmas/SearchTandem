@@ -28,11 +28,11 @@ The filter_reads.sh script, which is called within the main script, performs the
 
 The scripts have the following dependencies:
 
-    HISAT2
-    Samtools
-    FastQC
-    ExpansionHunter
-    REViewer
+    HISAT2 v2.1.0
+    Samtools v1.10
+    FastQC v0.11.9
+    ExpansionHunter v5.0.0
+    REViewer v0.2.7
 
 ## **Usage**
 
