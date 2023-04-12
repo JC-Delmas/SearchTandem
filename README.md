@@ -33,17 +33,7 @@ The scripts have the following dependencies:
     FastQC v0.11.9
     ExpansionHunter v5.0.0
     REViewer v0.2.7
-
-## **Usage**
-
-Make sure that the FASTQ R1 and R2 files are in gzip format and in the same directory as the scripts, avoid using shortcuts.
-
-Run the script in a terminal by navigating to the directory containing the script by the following command :
-
-    ./pipeline_tandem.sh -i input_file_R1.fastq.gz,input_file_R2.fastq.gz [-q]
-
-The output of the script will be saved in a CSV file with the format cnv_listing_yyyy-mm-dd_HH-MM-SS.csv where yyyy-mm-dd_HH-MM-SS is the current date and time. If the output file already exists, you will be prompted to overwrite it or choose a different name.
-
+    
 ## **Input**
 
 The script requires the following files in the same directory:
@@ -54,6 +44,16 @@ The script requires the following files in the same directory:
     -q: Run FastQC for quality control (optional).
 
 Make sure the reference genome (in FASTA format) is present in the same directory as the main script. Both the main script and the filter_reads.sh script should be executable (chmod +x script_name.sh).
+
+## **Usage**
+
+Make sure that the FASTQ R1 and R2 files are in gzip format and in the same directory as the scripts, avoid using shortcuts.
+
+Run the script in a terminal by navigating to the directory containing the script by the following command :
+
+    ./pipeline_tandem.sh -i input_file_R1.fastq.gz,input_file_R2.fastq.gz [-q]
+
+The output of the script will be saved in a CSV file with the format cnv_listing_yyyy-mm-dd_HH-MM-SS.csv where yyyy-mm-dd_HH-MM-SS is the current date and time. If the output file already exists, you will be prompted to overwrite it or choose a different name.
     
 ## **Output**
 
