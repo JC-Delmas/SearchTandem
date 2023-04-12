@@ -1,5 +1,5 @@
 # SearchTandem
-SearchTandem is a pipeline for processing paired-end FASTQ sequencing files to detect tandem repeats at the C9ORF72 locus, developed for CHU de Nîmes.
+SearchTandem is a pipeline for processing paired-end FASTQ sequencing files to detect tandem repeats at the C9ORF72 locus, developed for CHU de Nîmes. Please note that this script is designed for the specific use of the Laboratoire de Biochimie et de Biologie Moléculaire at CHU de Nîmes. It is possible that adaptations (such as file paths) may need to be made for the program to work in another work environment.
 
 ## **Introduction**
 
