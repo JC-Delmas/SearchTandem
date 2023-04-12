@@ -53,7 +53,7 @@ Run the script in a terminal by navigating to the directory containing the scrip
 
     ./ main_pipeline_tandem.sh -i input_file_R1.fastq.gz,input_file_R2.fastq.gz [-q]
 
-The output of the script will be saved in a CSV file with the format cnv_listing_yyyy-mm-dd_HH-MM-SS.csv where yyyy-mm-dd_HH-MM-SS is the current date and time. If the output file already exists, you will be prompted to overwrite it or choose a different name.
+The output of the script will be saved in a TXT file with the format. If the output file already exists, you will be prompted to overwrite it or choose a different name.
     
 ## **Output**
 
